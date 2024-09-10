@@ -2013,8 +2013,10 @@ namespace gl2d
 
 	}
 
+	
+	//this probably works the same as using spreadsheet animation idk (a wild thought by afuwwan)
 	void Texture::loadFromFileWithPixelPadding(const char* fileName, int blockSize,
-		bool pixelated, bool useMipMaps)
+		bool pixelated, bool useMipMaps) 
 	{
 		std::ifstream file(fileName, std::ios::binary);
 
@@ -2100,7 +2102,7 @@ namespace gl2d
 			}
 			else
 			{
-				position += delta * speed;
+				//position += delta * speed;
 
 
 			}
@@ -2110,7 +2112,7 @@ namespace gl2d
 			bool signY2 = delta.y >= 0;
 			if (signX2 != signX || signY2 != signY || glm::length(delta2) > len)
 			{
-				position = pos;
+				//position = pos;
 			}
 		}
 	}
